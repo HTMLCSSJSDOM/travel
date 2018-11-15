@@ -16,7 +16,11 @@
 			return {
 				swiperOption: {
 					 pagination: '.swiper-pagination',
+<<<<<<< HEAD
         			 loop: true
+=======
+        			loop: true
+>>>>>>> homeSwiper
 				}，
 				
 			}
@@ -35,7 +39,11 @@
 		height 0
 		padding-bottom 31.25%
 		.swiper-img
+<<<<<<< HEAD
 			width 100% 
 			
+=======
+			width 100%
+>>>>>>> homeSwiper
 </style>
 
