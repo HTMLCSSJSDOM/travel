@@ -1,39 +1,40 @@
 <template>
 	<div>
 		
-		<home-header></home-header>
-<<<<<<< HEAD
+		<home-header :city="city"></home-header>
+
 		<home-icons></home-icons>
-		<!-- <home-recommand></home-recommand> -->
-=======
-		<home-icon></home-icon>
->>>>>>> homeSwiper
+
+		<home-recommand></home-recommand>
+
+		<home-weekend></home-weekend>	
+
 	</div>
 </template>
 
 <script type="text/javascript">
 	import header from './components/header'
-<<<<<<< HEAD
+
 	import icons from './components/Icons'
-	// import recommand from './components/Recommand'
-=======
-	import homeIcon from './components/Icons.vue'
->>>>>>> homeSwiper
+
+	import recommand from './components/Recommand'
+	import weekend from './components/Weekend.vue'
+
 	export default {
 		name: 'home',
 		components: {
 			'home-header': header,
-<<<<<<< HEAD
 			'home-icons': icons,
-			// 'home-recommand': recommand
-=======
-			'home-icon': homeIcon
->>>>>>> homeSwiper
+			'home-recommand': recommand,
+			'home-weekend': weekend
 		},
 		data(){
 			return {
-				
+				city: ''
 			}
+		},
+		created() {
+			console.log(this.$chidren)
 		}
 	}
 </script>
